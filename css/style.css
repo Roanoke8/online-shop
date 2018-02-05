@@ -44,7 +44,7 @@ html {
 .currency__value {
   display: inline-block;
   text-transform: uppercase;
-  margin-left: 10px;
+  padding: 0 10px 0 11px;
 }
 .currency__icon {
   width: 8px;
@@ -132,6 +132,9 @@ html {
 .cart__link--hover:focus  path {
   fill: #ffffff;
 }
+.currency {
+  position: relative;
+}
 .currency__name {
   color: #999999;
   font-family: Montserrat;
@@ -140,11 +143,27 @@ html {
   line-height: 20px;
 }
 .currency__value {
+
   color: #999999;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
+  cursor: pointer;
+}
+.currency__dropdown {
+  position: absolute;
+  display: none;
+  width: 50px;
+  right: 29px;
+  background:  #333333;
+}
+.currency__value--hover:hover {
+  background: #00c8c8;
+  color: #ffffff;
+}
+.currency:hover  .currency__dropdown {
+  display: inline-block;
 }
 
 @media screen
