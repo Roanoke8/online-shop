@@ -146,3 +146,24 @@ html {
   font-weight: 400;
   line-height: 20px;
 }
+
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .users {
+    flex-direction: column;
+  }
+  .users__currency {
+  margin: 0 auto;
+  }
+  .users__block {
+    margin: 0 auto;
+  }
+  .users__cart {
+    margin: 0 auto;
+  }
+
+
+
+}
