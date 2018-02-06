@@ -165,10 +165,114 @@ html {
 .currency:hover  .currency__dropdown {
   display: inline-block;
 }
+.nav {
+  display: flex;
+  padding: 38px 6.5853% 0 ;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.logo__inner {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.logo__text--bold {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+}
+.nav__inner {
+  margin: 0 0 0 auto;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  display: block;
+  padding: 0 28px;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: default;
+
+}
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--active {
+    color: #00c8c8;
+    outline: 0;
+}
+
+.nav__search {
+  margin: 0 0 0 5.6097%;
+}
+.search__input {
+  color: #989898;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.nav__dropdown {
+  display: none;
+}
+@media screen
+  and (min-device-width: 800px)
+  and (max-device-width: 1350px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .users {
+      flex-direction: column;
+    }
+    .users__currency {
+    margin: 0 auto;
+    }
+    .users__block {
+      margin: 0 auto;
+    }
+    .users__cart {
+      margin: 0 auto;
+    }
+    .nav {
+      position: relative;
+      padding-top: 50px;
+    }
+    .nav__logo {
+      position: absolute;
+      right: 40%;
+      top: 17px;
+    }
+    .nav__link {
+      padding: 0 16px;
+    }
+    .nav__inner {
+      margin: 0 auto 0 0;
+    }
+    .nav__list {
+
+    }
+    .nav__search {
+      margin: 0 0 0 auto;
+    }
+  }
 
 @media screen
   and (min-device-width: 320px)
-  and (max-device-width: 800px)
+  and (max-device-width: 801px)
   and (-webkit-min-device-pixel-ratio: 1) {
   .users {
     flex-direction: column;
@@ -182,7 +286,25 @@ html {
   .users__cart {
     margin: 0 auto;
   }
+.nav {
+  flex-direction: column;
+}
+.nav__logo {
+  position: static;
+  margin: 0 auto;
+}
+.logo__inner {
+  text-align: center;
+}
+.nav__inner {
+  margin: 0 auto;
+}
+.nav__list {
+  flex-direction: column;
+  align-items: center;
 
-
+}
+.nav__item {
+  padding:  10px 0;
 
 }
