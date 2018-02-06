@@ -385,4 +385,5 @@ html {
 .header-button__link--border {
   width: 100%;
   margin: 0 auto;
+  font-size: 15px;
 }
