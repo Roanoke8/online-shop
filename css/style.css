@@ -176,8 +176,8 @@ html {
 }
 .nav {
   display: flex;
-  padding: 38px 6.5853% 0 ;
-  align-items: center;
+  padding: 30px 6.5853% 0;
+  align-items: baseline;
   flex-wrap: wrap;
 
 }
