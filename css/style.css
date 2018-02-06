@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 14px;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 *,
@@ -17,6 +18,14 @@ html {
 	height: 1px !important;
 	width: 1px !important;
 	overflow: hidden;
+}
+.header {
+  max-width: 2050px;
+  min-width: 320px;
+  background-image: url(../img/photo.png);
+  background-position: 15.4878% 52px;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
 }
 .header__item {
   display: flex;
@@ -222,6 +231,9 @@ html {
   margin: 0 0 0 5.6097%;
 }
 .search__input {
+  padding: 0 10px;
+  border: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
   color: #989898;
   font-family: Montserrat;
   font-size: 13px;
@@ -231,12 +243,58 @@ html {
 .nav__dropdown {
   display: none;
 }
+.center {
+  padding:  130px 12% 50px 12%;
+}
+.center__text {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  color:  #575153;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.center__span {
+  font-size: 25vw;
+}
+.center__span--left {
+  margin:0 auto 0 0;
+}
+.center__span--right{
+  margin:0 0 0 auto;
+}
+.center__span--center {
+  margin: 0 auto;
+}
+.header-button {
+  padding: 0 15.7560%;
+  padding-bottom: 122px;
+}
+.header-button__inner {
+  margin: 0 0 0 auto;
+}
+.header-button__link--border {
+  display: block;
+  height: 100%;
+  padding: 17px 32px;
+  border: 2px solid #737373;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 1.0123vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 @media screen
   and (min-device-width: 800px)
   and (max-device-width: 1350px)
   and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    background-position: 4.48780% 52px;
+  }
     .users {
-      flex-direction: column;
     }
     .users__currency {
     margin: 0 auto;
@@ -274,6 +332,10 @@ html {
   and (min-device-width: 320px)
   and (max-device-width: 801px)
   and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    background-image: none;
+    background-position: 149.4878% 156px;
+  }
   .users {
     flex-direction: column;
   }
@@ -307,4 +369,10 @@ html {
 .nav__item {
   padding:  10px 0;
 
+}
+.nav__search {
+  margin: 0 auto;
+}
+.center {
+  padding-top:  0;
 }
