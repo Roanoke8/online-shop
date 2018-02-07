@@ -343,6 +343,156 @@ html {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.main {
+  margin-top: 110px;
+  padding: 0 6.7317%;
+}
+.main-nav__list {
+  display: flex;
+  list-style: none;
+
+}
+.main-nav__link {
+  display: block;
+  padding: 0 28px;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus,
+.main-nav__link--active {
+    color: #00c8c8;
+    outline: 0;
+}
+.content {
+  display: flex;
+  padding-bottom:  40px;
+  border-bottom: 1px solid #eeeeee;
+}
+.content__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.card {
+  position: relative;
+  flex-grow: 1;
+  max-width: 50%;
+  padding: 10px;;
+}
+.card__inner {
+  background-color: #f8f8f8;
+
+}
+.card__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+.card--big {
+  max-width: 100%;
+  flex-grow: 2;
+}
+
+.card__price {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #9a9a9a;
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card-menu {
+  display: none;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  padding: 0 10px;
+
+}
+.card-menu__inner {
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.14);
+}
+.card__name {
+  margin-top: 0;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card__description {
+  margin-top: 0;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+.card__list {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.card__item {
+  margin: 0 10px;
+}
+.card__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #727272;
+}
+.card__link:hover {
+  background-color: #00c8c8;
+}
+.card__link--cart {
+  background-image: url(../img/cart24x24.png);
+  background-position: 3px center;
+  background-repeat: no-repeat;
+}
+.card__link--heart {
+  background-image: url(../img/heart-icon.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.card__link--arrow {
+  background-image: url(../img/arrow-icon.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.card:hover .card__menu {
+  display: block;
+
+}
+.card:hover .card__inner{
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+}
+.banner {
+  margin-top: 40px;
+}
 @media screen
   and (min-device-width: 800px)
   and (max-device-width: 1350px)
