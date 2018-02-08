@@ -704,6 +704,7 @@ html {
   }
   .lookbook__item {
     width: 100%;
+    margin-top: 20px;
     padding: 0;
     background-color: none;
   }
