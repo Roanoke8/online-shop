@@ -353,6 +353,7 @@ html {
 }
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 
 }
@@ -581,6 +582,11 @@ html {
   letter-spacing: 3.2px;
   text-decoration: none;
 }
+.lookbook__link:hover {
+  background-color: #00c8c8;
+  border-color: #00c8c8;
+  color: #ffffff;
+}
 
 .footer {
   margin-top: 124px;
@@ -646,39 +652,66 @@ html {
   .users__cart {
     margin: 0 auto;
   }
-.nav {
-  flex-direction: column;
-}
-.nav__logo {
-  position: static;
-  margin: 0 auto;
-}
-.logo__inner {
-  text-align: center;
-}
-.nav__inner {
-  margin: 0 auto;
-}
-.nav__list {
-  flex-direction: column;
-  align-items: center;
+  .nav {
+    flex-direction: column;
+  }
+  .nav__logo {
+    position: static;
+    margin: 0 auto;
+  }
+  .logo__inner {
+    text-align: center;
+  }
+  .nav__inner {
+    margin: 0 auto;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
 
-}
-.nav__item {
-  padding:  10px 0;
+  }
+  .nav__item {
+    padding:  10px 0;
 
+  }
+  .nav__search {
+    margin: 0 auto;
+  }
+  .center {
+    padding-top:  0;
+  }
+  .header-button {
+    display: block;
+  }
+  .header-button__link--border {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+
+  .main {
+    margin-top: 0;
+  }
+  .main-nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav__link {
+    padding: 10px 0;
+  }
+  .lookbook__inner {
+    flex-direction: column;
+  }
+  .lookbook__item {
+    width: 100%;
+    padding: 0;
+    background-color: none;
+  }
+  .lookbook__item-wrapper {
+    padding: 20px 20px 0 20px;
+    background-color: #f8f8f8;
 }
-.nav__search {
-  margin: 0 auto;
-}
-.center {
-  padding-top:  0;
-}
-.header-button {
-  display: block;
-}
-.header-button__link--border {
-  width: 100%;
-  margin: 0 auto;
-  font-size: 15px;
+  .lookbook__link {
+    margin: 30px 0 50px auto;
+  }
 }
