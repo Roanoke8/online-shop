@@ -714,5 +714,6 @@ html {
 }
   .lookbook__link {
     margin: 30px 0 50px auto;
+    font-size: 2vw;
   }
 }
