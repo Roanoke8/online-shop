@@ -644,6 +644,9 @@ html {
     background-image: none;
     background-position: 149.4878% 156px;
   }
+  .content {
+    padding: 0 1.7317%;
+  }
   .users {
     flex-direction: column;
   }
@@ -697,6 +700,8 @@ html {
     margin-top: 0;
   }
   .main-nav__list {
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -725,20 +730,29 @@ html {
     background-color: #ffffff;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 38px 30px;
+    padding: 1px 5px;
     box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.14);
   }
   .card__img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      max-height: 250px;
-  }
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 177px;
+ }
   .card__name {
     color: #ffffff;
+    font-size: 1vw;
   }
   .card__description {
-    color: #ffffff;
+    display: none;
+  }
+  .card__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__item {
+    margin-bottom: 10px;
   }
   .lookbook__inner {
     flex-direction: column;
