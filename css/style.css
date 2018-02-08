@@ -346,7 +346,10 @@ html {
 
 .main {
   margin-top: 110px;
+}
+.main-nav {
   padding: 0 6.7317%;
+
 }
 .main-nav__list {
   display: flex;
@@ -374,6 +377,8 @@ html {
 }
 .content {
   display: flex;
+  margin-top: 60px;
+  padding: 0 6.7317%;
   padding-bottom:  40px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -490,8 +495,93 @@ html {
 .card:hover .card__inner{
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
 }
-.banner {
-  margin-top: 160px;
+.lookbook {
+  margin-top: 62px;
+}
+.lookbook__inner {
+  display: flex;
+}
+.lookbook__item {
+  width: 33.3333%;
+  flex-grow: 1;
+  padding: 20px 20px 0 20px;
+  background-color: #f8f8f8;
+}
+.lookbook__item:not(:last-child) {
+  margin-right: 30px;
+}
+.lookbook__item-wrapper {
+  display: flex;
+}
+.lookbook__item-inner {
+  width: 50%;
+  flex-grow: 2;
+}
+
+.lookbook__header {
+  color: #575153;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-align: right;
+
+}
+
+.lookbook__header--medium {
+  font-weight: 300;
+  letter-spacing: 2.4px;
+}
+.lookbook__text {
+  margin: 0;
+  padding: 0;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+}
+
+.lookbook__item-inner--img {
+  width: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lookbook__item-inner--men {
+  background-image: url(../img/lookbook-man.png);
+  background-position: 0 18px;
+
+}
+.lookbook__item-inner--women {
+  background-image: url(../img/lookbook-women.png);
+  background-position: 0 57px;
+}
+
+.lookbook__item-inner--shadow {
+  background-image: url(../img/lookbook-shadow.png);
+  background-position: 0 17px;
+}
+.footer {
+  margin-top: 124px;
+}
+.lookbook__link {
+  margin: 30px 0 130px auto;
+  max-width: 180px;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border: 2px solid #737373;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  text-decoration: none;
 }
 @media screen
   and (min-device-width: 800px)
